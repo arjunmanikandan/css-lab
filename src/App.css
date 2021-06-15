@@ -1,29 +1,37 @@
 
 .b1{
-	background: red;
+	background:green;
 	top: 10px;
-	left: 340px;
-}
+	left: 350px;
+	}
 .b2{
-	background: green;
+	background:red;
 	top: 10px;
 	left: 235px;
 }
 .b3{
-	background: blue;
-	top: 118px;
-	left: 340px;
+	background:orange;
+	top: 122px;
+	left: 348px
 }
 .b4{
-	background: orange;
-	top: 117px;
-	left: 235px;
+	background:blue;
+	top: 122px;
+	left: 234px;
 }
 .box{
 	border: 1px solid black;
 	position: absolute;
 	width: 100px;
 	height: 100px;
+	box-shadow: -2px 4px 14px 1px #000000;
+
+}
+.logo{
+	transform: rotate(25deg);
+	position: absolute;
+	top: 100px;
+	left: 150px;
 }
 .App {
 	text-align: center;
