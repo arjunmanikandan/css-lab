@@ -44,6 +44,10 @@
 	height: 212px;
 	width: 212px;
 	pointer-events: none;
+	transform: rotate(25deg);
+	position: absolute;
+	left: 50%;
+	top: 46%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
