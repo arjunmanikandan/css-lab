@@ -1,69 +1,8 @@
 
-.b1{
-	background:green;
-	top: 0%;
-	left: 110%;
-	}
-.b2{
-	background:red;
-	top: 0%;
-	left: 0%;
-}
-.b3{
-	background:orange;
-	top: 110%;
-	left: 110%;
-}
-.b4{
-	background:blue;
-	top: 110%;
-	left: 0%;
-}
-.box{
-	border: 1px solid black;
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	box-shadow: -185px 4px 14px 1px #000000;
-	animation: box 5s infinite ease;
-
-}
-.logo{
-	transform: rotate(25deg);
-	position: absolute;
-	top: 100px;
-	left: 150px;
-
-}
 .App {
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
-}
-
-.app-logo {
-	height: 212px;
-	width: 212px;
-	pointer-events: none;
-	transform: rotate(25deg);
-	position: absolute;
-	left: 50%;
-	top: 46%;
-}
-
-.container{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.app-logo {
-		animation: container-spin 5s ease 2s infinite normal, logo-movement 6s;
-	}
-	.container{
-		animation: box 5s ease infinite normal;
-}
 }
 
 .App-header {
@@ -79,48 +18,4 @@
 
 .App-link {
 	color: #61dafb;
-}
-
-@keyframes container-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes box {
-	0%{
-		height: 15%;
-		width: 15%;
-	}
-
-	25%{
-		height: 20%;
-		width: 20%;
-	}
-	50%{
-		height: 40%;
-		width: 40%;
-	}
-	75%{
-		height: 50%;
-		width: 50%;
-	}
-	100%{
-		height: 100%;
-		width:  100%;
-	}
-}
-
-@keyframes logo-movement {
-	from{
-		top: 5%;
-		left: 10%;
-	}
-	to{
-		top: 50%;
-		left: 49%;
-	}
 }
