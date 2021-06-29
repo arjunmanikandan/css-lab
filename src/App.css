@@ -1,23 +1,23 @@
 
 .b1{
 	background:green;
-	top: 0px;
-	left: 110px;
+	top: 0%;
+	left: 110%;
 	}
 .b2{
 	background:red;
-	top: 0px;
-	left: 0px;
+	top: 0%;
+	left: 0%;
 }
 .b3{
 	background:orange;
-	top: 110px;
-	left: 110px;
+	top: 110%;
+	left: 110%;
 }
 .b4{
 	background:blue;
-	top: 110px;
-	left: 0px;
+	top: 110%;
+	left: 0%;
 }
 .box{
 	border: 1px solid black;
@@ -51,10 +51,19 @@
 	top: 46%;
 }
 
+.container{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 	.app-logo {
-		animation: app-logo-spin 5s ease 2s infinite normal, logo-movement 6s;
+		animation: container-spin 5s ease 2s infinite normal, logo-movement 6s;
 	}
+	.container{
+		animation: box 5s ease infinite normal;
+}
 }
 
 .App-header {
@@ -72,7 +81,7 @@
 	color: #61dafb;
 }
 
-@keyframes app-logo-spin {
+@keyframes container-spin {
 	from {
 		transform: rotate(0deg);
 	}
@@ -83,25 +92,25 @@
 
 @keyframes box {
 	0%{
-		height: 15px;
-		width: 15px;
+		height: 15%;
+		width: 15%;
 	}
 
 	25%{
-		height: 20px;
-		width: 20px;
+		height: 20%;
+		width: 20%;
 	}
 	50%{
-		height: 40px;
-		width: 40px;
+		height: 40%;
+		width: 40%;
 	}
 	75%{
-		height: 50px;
-		width: 50px;
+		height: 50%;
+		width: 50%;
 	}
 	100%{
-		height: 100px;
-		width:  100px
+		height: 100%;
+		width:  100%;
 	}
 }
 
